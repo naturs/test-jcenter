@@ -28,9 +28,9 @@ allprojects {
         package_repo = 'maven' // bintray上的仓库名，一般为maven
         package_type = 'jar'  // 输出类型
         package_group = 'com.github.naturs.test' // JCenter的GroupId
-        package_artifact = 'demo' // JCenter的ArtifactId
+        package_artifact = 'jcenter-test' // JCenter的ArtifactId
         package_version = '1.0'  // JCenter的VersionId
-        package_description = 'A tool for Android'
+        package_description = 'just for jcenter test'
 
         // 以下选填
         siteUrl = 'https://github.com/naturs/test-jcenter'

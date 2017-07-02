@@ -2,3 +2,26 @@
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+
+ext {
+    package_repo = 'maven' // bintray上的仓库名，一般为maven
+    package_type = 'jar'  // 输出类型
+    package_group = 'com.github.naturs.test' // JCenter的GroupId
+    package_artifact = 'library1' // JCenter的ArtifactId
+    package_version = '1.0'  // JCenter的VersionId
+    package_description = 'description library1'
+
+    // 以下选填
+    siteUrl = 'https://github.com/naturs/test-jcenter'
+    gitUrl = 'https://github.com/naturs/test-jcenter.git'
+
+    //开发者信息
+    developerId = 'naturs'
+    developerName = 'naturs'
+    developerEmail = 'naturs@xx.com'
+
+    //开源协议
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ['Apache-2.0']
+}

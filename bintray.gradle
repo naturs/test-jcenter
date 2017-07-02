@@ -82,6 +82,7 @@ bintray {
 
     configurations = ['archives']
     pkg {
+        userOrg = "luoshuai"
         repo = package_repo
         name = package_artifact
         desc = package_description
@@ -117,10 +118,17 @@ install {
                 url = defaultValue 'siteUrl', ''
 
                 // Set your license
+//                licenses {
+//                    license {
+//                        name = defaultValue 'licenseName', ''
+//                        url = defaultValue 'licenseUrl', ''
+//                    }
+//                }
                 licenses {
                     license {
-                        name = defaultValue 'licenseName', ''
-                        url = defaultValue 'licenseUrl', ''
+                        name "The Apache Software License, Version 2.0"
+                        url "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                        distribution "repo"
                     }
                 }
                 developers {
